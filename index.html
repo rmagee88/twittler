@@ -7,11 +7,12 @@
 		<script src="data_generator.js"></script>
 	</head>
 	<body>
-		<button id="newTweets">Get New Tweets</button>
-		<button id="backToStream">Back to Stream</button>
-		<div id="stream">
-			
-		</div>
+		<div id="container">	
+			<button id="newTweets">Get New Tweets</button>
+			<button id="backToStream">Back to Stream</button>
+			<div id="stream">
+			</div>
+		</div>	
 		<script>
 			// takes streams object, writes all tweets, optional 2nd argument of user
 			showTweets = function (streams, globalUser) {
@@ -34,7 +35,7 @@
 					$time.text(' [' + moment(tweet.created_at).fromNow() + '] ');
 					$user.text('@' + tweet.user);
 					$user.data('username', tweet.user);
-					$tweetTxt.text(' : ' + tweet.message);	
+					$tweetTxt.text(' ' + tweet.message);	
 					$tweet.appendTo($body);
 						index -= 1;
 				};	
@@ -54,10 +55,12 @@
 				// listener to clicks on usernames to move to just their tweets
 				$("#stream").on("click", ".user",function() {
 					// hide the main list of tweets, then print out that users' tweets
-					// into the user div
-					$('#backToStream').toggle();	
+					// into the user di
+					if (!globalUser) {	
+					$('#backToStream').toggle();
 					globalUser = $(this).data('username');
-					showTweets(streams, globalUser); 
+					showTweets(streams, globalUser);
+					}; 
 				});
 				
 				// listener to take you back to the main stream
