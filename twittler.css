@@ -1,0 +1,14 @@
+#stream {
+	font-weight:bold;	
+}
+
+#backToStream {
+	display:none;
+}
+
+html, body {
+  color: white;
+  background-color:gray;
+  height: 100%;
+  font-family: helvetica, arial, sans-serif;
+}
