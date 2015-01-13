@@ -1,60 +1,60 @@
 #stream {
-	font-weight:bold;	
+  font-weight:bold;
 }
 
 #backToStream {
-	display:none;
+  display:none;
 }
 
 div .tweet {
-	padding:10px;
+  padding:10px;
 }
 
 .user {
-	color:cyan;
-	outline-style:solid;
-	outline-color:black;
-	outline-width:1px;
+  color:cyan;
+  outline-style:solid;
+  outline-color:black;
+  outline-width:1px;
 }
 
 .time {
-	color:darkgray;
-	font-style:italic;
-	font-weight:normal;
+  color:darkgray;
+  font-style:italic;
+  font-weight:normal;
 }
 
 button {
-	border-radius:28px;
-	border:1px solid #748076;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #7e857d;
+  border-radius:28px;
+  border:1px solid #748076;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #7e857d;
 }
 
 button:hover {
-	background-color:#2465c7;
+  background-color:#2465c7;
 }
 
 button:active {
-	position:relative;
-	top:1px;
+  position:relative;
+  top:1px;
 }
 
 #container {
-	margin-left:auto;
-	margin-right:auto;
-	width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
 }
 
 body {
-	width:auto;
-	color: white;
-	background-color:gray;
-	height: 100%;
-	font-family: helvetica, arial, sans-serif;
+  width:auto;
+  color: white;
+  background-color:gray;
+  height: 100%;
+  font-family: helvetica, arial, sans-serif;
 }
